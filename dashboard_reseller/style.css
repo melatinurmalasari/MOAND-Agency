@@ -265,6 +265,11 @@ body {
     color: #7D3A2A;
 }
 
+.content button{
+    border: none;
+    margin-bottom: 15px;
+}
+
 .btn-edit{
     position: absolute;
     bottom: 45px;
@@ -422,6 +427,426 @@ span {
     border: 2px solid #7D3A2A;
     color:  #7D3A2A;
 }
+
+#profileModal .modal-content{
+    background-color: #41322A;
+    border: none;
+}
+
+#profileModal .modal-header{
+    border: none;
+}
+
+#profileModal .modal-header h5{
+    color: #EBD6CA;
+    font-style: normal;
+    font-weight: 600;
+    font-size:25px;
+    line-height: 38px;
+    margin-left: 180px;
+}
+
+#profileModal .modal-body label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    color: #EBD6CA;
+    margin-left: 13px;
+}
+
+#profileModal .modal-body input{
+    background: #745954;
+    border: none;
+    width: 95%;
+    margin-left: 13px;
+}
+
+#profileModal .modal-footer{
+    border: none;
+}
+
+#profileModal .modal-footer .btn-out{
+    background: #7D3A2A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+    width: 93%;
+    margin-left: 18px;
+}
+
+#profileModal .modal-footer .btn-out:hover{
+    background: #745954;
+    border: none;
+}
+
+#editModal .modal-content{
+    background-color: #41322A;
+    border: none;
+}
+
+#editModal .modal-header{
+    border: none;
+}
+
+#editModal .modal-header h5{
+    color: #EBD6CA;
+    font-style: normal;
+    font-weight: 600;
+    font-size:25px;
+    line-height: 38px;
+    margin-left: 12px;
+}
+
+#editModal .modal-header .btn-close{
+    background-color: #EBD6CA;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#editModal .modal-body button{
+    border: none;
+    background-color: transparent;
+}
+
+#editModal .modal-body label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    color: #EBD6CA;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+#editModal .modal-body input{
+    background: #745954;
+    border: none;
+    width: 95%;
+    margin-left: 13px;
+}
+
+
+#editModal .modal-body .btn-delete{
+    color: #CABEC1;
+    margin-left: 90%;
+    font-size: 25px;
+    border: none;
+    margin-top: 10px;
+}
+
+#editModal .modal-body .btn-delete:hover{
+    color: #7D3A2A;
+}
+
+#editModal .modal-body .btn-add{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    padding: 2px 4px;
+    font-size: 30px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#editModal .modal-body .btn-add:hover{
+    color: #7D3A2A;
+}
+
+#editModal .modal-body .btn-less{
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    padding: 2px 4px;
+    font-size: 30px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#editModal .modal-body .btn-less:hover{
+    color: #7D3A2A;
+}
+
+#editModal .modal-body .btn-number input{
+    position: absolute;
+    bottom: 47px;
+    left: 49px;
+    padding: 2px 4px;
+    font-size: 15px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+#editModal .modal-body .inputNumber:hover{
+    border: none;
+    background-color: transparent;
+}
+
+#editModal .modal-footer{
+    border: none;
+}
+
+#editModal .modal-footer .btn-drop{
+    background: #7D3A2A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+}
+
+#editModal .modal-footer .btn-save{
+    background: #745954;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+    margin-right: 15px;
+}
+
+#editModal .modal-footer .btn-drop:hover{
+    background: #745954;
+    border: none;
+}
+
+#editModal .modal-footer .btn-save:hover{
+    background: #7D3A2A;
+    border: none;
+}
+
+#itemModal .modal-content{
+    background-color: #41322A;
+    border: none;
+}
+
+#itemModal .modal-header{
+    border: none;
+}
+
+#itemModal .modal-header h5{
+    color: #EBD6CA;
+    font-style: normal;
+    font-weight: 600;
+    font-size:25px;
+    line-height: 38px;
+    margin-left: 12px;
+}
+
+#itemModal .modal-header .btn-close{
+    background-color: #EBD6CA;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#itemModal .modal-body label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    color: #EBD6CA;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+#itemModal .modal-body input{
+    background: #745954;
+    border: none;
+    width: 95%;
+    margin-left: 13px;
+}
+
+#itemModal .modal-body .btn-add{
+    position: absolute;
+    margin-top: 40px;
+    left: 100px;
+    padding: 2px 4px;
+    font-size: 30px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#itemModal .modal-body .btn-add:hover{
+    color: #7D3A2A;
+}
+
+#itemModal .modal-body .btn-less{
+    position: absolute;
+    margin-top: 40px;
+    left: 25px;
+    padding: 2px 4px;
+    font-size: 30px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#itemModal .modal-body .btn-less:hover{
+    color: #7D3A2A;
+}
+
+#itemModal .modal-body .btn-number{
+    background-color: transparent;
+    border: none;
+}
+
+#itemModal .modal-body .btn-number input{
+    position: absolute;
+    left: 49px;
+    padding: 2px 4px;
+    font-size: 15px;
+    color:  #CABEC1;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+#itemModal .modal-body .inputNumber:hover{
+    border: none;
+    background-color: transparent;
+}
+
+
+
+#itemModal .modal-footer{
+    border: none;
+}
+
+#itemModal .modal-footer .btn-batal{
+    background: #7D3A2A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+    margin-top: 50px;
+}
+
+#itemModal .modal-footer .btn-tambah{
+    background: #745954;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+
+#itemModal .modal-footer .btn-batal:hover{
+    background: #745954;
+    border: none;
+}
+
+#itemModal .modal-footer .btn-tambah:hover{
+    background: #7D3A2A;
+    border: none;
+}
+
+#drafModal .modal-content{
+    background-color: #41322A;
+    border: none;
+}
+
+#drafModal .modal-header{
+    border: none;
+}
+
+#drafModal .modal-header h5{
+    color: #EBD6CA;
+    font-style: normal;
+    font-weight: 600;
+    font-size:25px;
+    line-height: 38px;
+    margin-left: 12px;
+}
+
+#drafModal .modal-header .btn-close{
+    background-color: #EBD6CA;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#drafModal .modal-body label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    color: #EBD6CA;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+#drafModal .modal-body input{
+    background: #745954;
+    border: none;
+    width: 95%;
+    margin-left: 13px;
+}
+
+
+#drafModal .modal-footer{
+    border: none;
+}
+
+#drafModal .modal-footer .btn-checkOut{
+    background: #7D3A2A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: #EBD6CA;
+    border: none;
+    width: 93%;
+    margin-left: 18px;
+}
+
+#drafModal .modal-footer .btn-checkOut:hover{
+    background: #745954;
+    border: none;
+}
+
+
+
+
+
 
 
 
