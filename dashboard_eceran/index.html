@@ -44,7 +44,7 @@
         </li>
       </ul>
       <div class="shopping">
-        <i class="fa-solid fa-bag-shopping fa-xl"></i>
+        <i data-bs-toggle="modal" data-bs-target="#drafModal" class="fa-solid fa-bag-shopping fa-xl"></i>
       </div>
       <button type="button" data-bs-toggle="modal" data-bs-target="#profileModal" class="btn-profile">Profile</button>
     </div>
@@ -565,7 +565,7 @@
 <div class="card">
         <h1>Pesanan Pelanggan</h1>
         <ul style="list-style-type: none;">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#drafModal" class="draf">Draf Semuanya</a></li>
+          <li><a href="#" class="draf">Draf Semuanya</a></li>
           <li><a href="#" class="delete">Hapus Semuanya</a></li>
         </ul>
         <hr>
@@ -582,7 +582,8 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Profil</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Pengaturan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="form-group">
@@ -592,7 +593,7 @@
       </div>
       <div class="modal-footer">
         <div class="d-grid gap-2 col-12 mx-auto">
-          <button type="button" class="btn btn-lg btn-out" data-bs-dismiss="modal">Keluar</button>
+         <a href="../signin/index.html"> <button type="button" class="btn btn-lg btn-out">Keluar</button></a>
         </div>
       </div>
     </div>
