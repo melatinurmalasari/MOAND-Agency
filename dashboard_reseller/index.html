@@ -44,7 +44,7 @@
         </li>
       </ul>
       <div class="shopping">
-        <i class="fa-solid fa-bag-shopping fa-xl"></i>
+        <i data-bs-toggle="modal" data-bs-target="#drafModal" class="fa-solid fa-bag-shopping fa-xl"></i>
       </div>
        <button type="button" data-bs-toggle="modal" data-bs-target="#profileModal" class="btn-profile">Profile</button>
     </div>
@@ -919,7 +919,7 @@
 <div class="card">
         <h1>Pesanan Pelanggan</h1>
         <ul style="list-style-type: none;">
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#drafModal" class="draf">Draf Semuanya</a></li>
+          <li><a href="#" class="draf">Draf Semuanya</a></li>
           <li><a href="#" class="delete">Hapus Semuanya</a></li>
         </ul>
         <hr>
@@ -936,7 +936,8 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Profil</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Pengaturan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="form-group">
@@ -946,7 +947,968 @@
       </div>
       <div class="modal-footer">
         <div class="d-grid gap-2 col-12 mx-auto">
-          <button type="button" class="btn btn-lg btn-out" data-bs-dismiss="modal">Keluar</button>
+          <a href="../signin/index.html"><button type="button" class="btn btn-lg btn-out">Keluar</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html><!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman Dashboard</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Logo Title Bar -->
+  <link rel="icon" href="images/MOAND Agency 1.png" type="image/x-icon">
+  <!-- Icon Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+<!-- Navbar -->
+ <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img src="images/anggasnack.png" alt="" width="130"height="80" class="d-inline-block align-text-top">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pembelian Grosir
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../dashboard_oleh/index.html"> Oleh-Oleh</a></li>
+            <li><a class="dropdown-item" href="../dashboard_reseller/index.html">Reseller</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../dashboard_eceran/index.html">Pembelian Eceran</a>
+        </li>
+      </ul>
+      <div class="shopping">
+        <i data-bs-toggle="modal" data-bs-target="#drafModal" class="fa-solid fa-bag-shopping fa-xl"></i>
+      </div>
+       <button type="button" data-bs-toggle="modal" data-bs-target="#profileModal" class="btn-profile">Profile</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Maincontent -->
+<div class="wrapper">
+  <div class="col-lg-8 offset-lg2 text-center">
+    <div class="h-search-form">
+      <form action="#">
+        <input type="search" name="search" placeholder="Mau cari apa...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+  <button type="button" data-bs-toggle="modal" data-bs-target="#itemModal" class="btn-item">
+    <i class="fa-solid fa-plus"></i>Tambah Barang
+  </button>
+   <div class="project">
+    <div class="shop">
+      <div class="box">
+        <div class="content">
+          <h3>Rengginang Udang Pack</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp102.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kembang Jambu</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp93.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Sus Gosyen</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp107.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Sus TBH</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp125.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Sus TBH Bangkong</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp85.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Hello Sus</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp125.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kulit Ikan Kakap</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp135.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Bolu Donat</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp50.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kembang Goyang</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp47.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Pisang Dollar MT</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp130.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Dollar</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp70.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Stik Sukun Azam</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp145.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Singkong Bakar Tes</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp108.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Singkong Bakar Mitratop</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp67.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Stik Tes Balado</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp70.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Stik Nana</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp50.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Stik Keju</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp93.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kacang Oven Kulit Onta</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp180.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kacang AS 2.5 Kg</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp88.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kacang AS 5 Kg</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp175.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kacang Utama</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp115.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kacang Bima</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp104.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Green Stik</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp40.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Yolla-Yolla Stik</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp65.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Pisang Eco Rajanangka</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp90.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Jelly Inaco</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp250.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kapri Tepung KMU</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp94.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Kapri Ijo Jaipong</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp107.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Pang-pang KMU</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp83.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Rengginang Udang Pack</h3>
+          <p class="unit"> 
+            Tersedia <input value="100">
+            <i class="fa-solid fa-circle"></i>
+            Terjual <input value="65"></p>
+           <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+            <i class="fa-solid fa-pen-to-square"></i> 
+          </button> 
+          <span class="text">Rp102.000</span>
+           <button type="button" class="btn-min"> 
+             <i class="fa-solid fa-circle-minus"></i>
+          </button>
+          <button type="button" class="btn-plus"> 
+             <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <p class="add">
+            <input value="2">
+          </p>
+          <button type="button" class="btn-cart"> 
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+
+   
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Barang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Nama Barang</label>
+          <input type="text" name="nama" class="form-control">
+          <label>Harga Barang</label>
+          <input type="text" name="barang" class="form-control">
+          <label>Jumlah Barang</label>
+          <button type="button" class="btn btn-delete"><i class="fa-solid fa-trash-can"></i></button>
+          <button type="button" class="btn-less"> 
+             <i class="fa-solid fa-square-minus"></i>
+          </button>
+          <button type="button" class="btn-number">
+            <input value="100">
+          </button>
+          <button type="button" class="btn-add"> 
+             <i class="fa-solid fa-square-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-drop">Buang Perubahan</button>
+          <button type="button" class="btn btn-save">Simpan Perubahan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Tambah-->
+<div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Barang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Nama Barang</label>
+          <input type="text" name="nama" class="form-control">
+          <label>Harga Barang</label>
+          <input type="text" name="barang" class="form-control">
+          <label>Jumlah Barang</label>
+          <button type="button" class="btn-less"> 
+             <i class="fa-solid fa-square-minus"></i>
+          </button>
+          <button type="button" class="btn-number">
+            <input value="100">
+          </button>
+          <button type="button" class="btn-add"> 
+             <i class="fa-solid fa-square-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-batal">Batal Tambah</button>
+          <button type="button" class="btn btn-tambah">Tambahkan Barang</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Draf -->
+<div class="modal fade" id="drafModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Draf Pesanan Pelanggan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+    
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <button type="button" class="btn btn-lg btn-checkOut">Check Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<div class="card">
+        <h1>Pesanan Pelanggan</h1>
+        <ul style="list-style-type: none;">
+          <li><a href="#" class="draf">Draf Semuanya</a></li>
+          <li><a href="#" class="delete">Hapus Semuanya</a></li>
+        </ul>
+        <hr>
+        <div class="checkOut">
+            <button type="button" class="btn-print">Cetak Nota</button>
+            <button type="button" class="btn-cancel">Batalkan Pesanan</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Profile -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pengaturan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" name="nama" class="form-control">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <a href="../signin/index.html"><button type="button" class="btn btn-lg btn-out">Keluar</button></a>
         </div>
       </div>
     </div>
