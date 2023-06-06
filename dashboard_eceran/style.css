@@ -439,13 +439,19 @@ span {
     border: none;
 }
 
+#profileModal .modal-header .btn-close{
+    background-color: #EBD6CA;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
 #profileModal .modal-header h5{
     color: #EBD6CA;
     font-style: normal;
     font-weight: 600;
     font-size:25px;
     line-height: 38px;
-    margin-left: 180px;
+    margin-left: 165px;
 }
 
 #profileModal .modal-body label{
