@@ -40,7 +40,7 @@
     width: 450px;
 }
 
-.login-form a{
+.login-form label a{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -48,6 +48,10 @@
     text-align: right;
     color: #CABEC1;
     margin-left: 200px;
+}
+
+.login-form label a:hover{
+    color: #EBD6CA;
 }
 
 .login-form .signin{
@@ -61,6 +65,13 @@
     margin-top: 44px;
     border: none;
     width: 450px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-form .signin:hover{
+    background:  #745954;
+   
 }
 
 .box{
