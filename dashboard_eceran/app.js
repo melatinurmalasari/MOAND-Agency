@@ -1,4 +1,4 @@
-let openShopping = document.querySelector('.shopping');
+let openShopping = document.querySelector('.btn-cart');
 let closeShopping = document.querySelector('.btn-cancel');
 let body = document.querySelector('body');
 
