@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2023 at 06:14 AM
+-- Generation Time: Jun 08, 2023 at 06:26 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -85,7 +85,7 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
 CREATE TABLE `listpesanan` (
   `id_pesanan` int(255) NOT NULL,
   `id_barang` int(12) NOT NULL,
-  `no_transaksi` varchar(255) NOT NULL,
+  `no_transaksi` int(12) NOT NULL,
   `kuantitas` int(255) NOT NULL,
   `total` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -132,7 +132,8 @@ ALTER TABLE `kategori`
 --
 ALTER TABLE `listpesanan`
   ADD PRIMARY KEY (`id_pesanan`),
-  ADD KEY `id_barang` (`id_barang`);
+  ADD KEY `id_barang` (`id_barang`),
+  ADD KEY `no_transaksi` (`no_transaksi`);
 
 --
 -- Indexes for table `transaksi`
@@ -190,13 +191,13 @@ ALTER TABLE `barang`
 -- Constraints for table `listpesanan`
 --
 ALTER TABLE `listpesanan`
-  ADD CONSTRAINT `listpesanan_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`);
+  ADD CONSTRAINT `listpesanan_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`),
+  ADD CONSTRAINT `listpesanan_ibfk_2` FOREIGN KEY (`no_transaksi`) REFERENCES `transaksi` (`no_transaksi`);
 
 --
 -- Constraints for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`no_transaksi`) REFERENCES `listpesanan` (`id_pesanan`),
   ADD CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kasir`) REFERENCES `kasir` (`id_kasir`);
 COMMIT;
 
