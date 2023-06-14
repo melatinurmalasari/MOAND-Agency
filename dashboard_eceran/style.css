@@ -157,34 +157,6 @@ body {
     margin: 0 auto;
 }
 
-.unit{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 33px;
-    color: #41322a;
-}
-
-.unit input{
-    width: 19px;
-    height: 19px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 33px;
-    color: #41322a;
-    background: transparent;
-    border: transparent;
-}
-
-.unit i{
-    display: inline-flex;
-    align-items: center;
-    padding-right: 5px;
-    color: #41322a;
-}
-
 .card{
     position: fixed;
     top: 100px;
