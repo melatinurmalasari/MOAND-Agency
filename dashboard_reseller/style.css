@@ -89,12 +89,13 @@ body {
 
 
 .h-search-form{
-    width: 450px;
+    width: 525px;
     position: relative;
+    left: 15px;
 }
 
 .h-search-form input{
-    width: 450px;
+    width: 525px;
     padding: 0 30px;
     border-radius: 50px;
     background-color: #CABEC1;
@@ -139,7 +140,7 @@ body {
     color: #CABEC1;
     position: absolute;
     top: 140px;
-    margin-left: 460px ;
+    margin-left: 558px ;
 }
 
 .btn-item:hover{
@@ -153,178 +154,6 @@ body {
 .wrapper{
     max-width:1000px;
     margin: 0 auto;
-}
-
-.project{
-    display: flex;
-}
-
-.shop{
-    flex: 75%;
-}
-
-.box{
-    width: 65%;
-    height: 100px;
-    overflow: hidden;
-    margin-top: 10px;
-    background:#EBD6CA;
-    transition: all .6s ease;
-    box-shadow: rgba(100, 100,111,0.2) 0 7px 29px 0;
-    border: 3px solid #41322a;
-    border-radius: 20px;
-}
-
-.box::hover{
-    transform: scale(1.02);
-}
-
-.content{
-    padding: 20px;
-    position: relative;
-    width: 100%;
-}
-
-.content h3{
-    height: 15px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15.5px;
-    line-height: 33px;
-    color: #41322a;
-}
-
-.btn-cart{
-    position: absolute;
-    bottom: 32px;
-    right: 25px;
-    padding: 2px 4px;
-    background-color: transparent;
-    font-size: 22px;
-    color: #41322A;;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
-.btn-cart:hover{
-    background-color: transparent;
-    color: #7D3A2A;
-}
-
-.btn-plus{
-    position: absolute;
-    bottom: 30px;
-    right: 100px;
-    padding: 2px 4px;
-    background-color: transparent;
-    font-size: 25px;
-    color:  #745954;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
-.btn-plus:hover{
-    background-color: transparent;
-    color: #7D3A2A;
-}
-
-.add input{
-    position: absolute;
-    bottom: 38px;
-    right: 150px;
-    width: 19px;
-    height: 19px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 33px;
-    color: #41322a;
-    background: transparent;
-    border: transparent;
-}
-
-.btn-min{
-    position: absolute;
-    bottom: 30px;
-    right: 175px;
-    padding: 2px 4px;
-    background-color: transparent;
-    font-size: 25px;
-    color:  #745954;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
-.btn-min:hover{
-    background-color: transparent;
-    color: #7D3A2A;
-}
-
-.content button{
-    border: none;
-    margin-bottom: 15px;
-}
-
-.btn-edit{
-    position: absolute;
-    bottom: 45px;
-    left:250px;
-    padding: 2px 4px;
-    background-color: transparent;
-    font-size: 15px;
-    color:  #745954;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
-.btn-edit:hover{
-    background-color: transparent;
-    color: #7D3A2A;
-}
-
-span {
-    position: absolute;
-    bottom: 55px;
-    right:250px;
-    padding: 2px 4px;
-    color: #41322a;
-    font-size: 13px;
-    margin-right: 5px;
-    font-weight: 600;
-}
-
-.unit{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 33px;
-    color: #41322a;
-}
-
-.unit input{
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 33px;
-    color: #41322a;
-    background: transparent;
-    border: transparent;
-}
-
-.unit i{
-    display: inline-flex;
-    align-items: center;
-    padding-right: 5px;
-    color: #41322a;
 }
 
 .card{
@@ -443,7 +272,7 @@ span {
     font-weight: 600;
     font-size:25px;
     line-height: 38px;
-    margin-left: 165px;
+    margin-left: 180px;
 }
 
 #profileModal .modal-body label{
@@ -455,13 +284,6 @@ span {
     color: #EBD6CA;
     margin-left: 13px;
 }
-
-#profileModal .modal-header .btn-close{
-    background-color: #EBD6CA;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
 
 #profileModal .modal-body input{
     background: #745954;
@@ -490,6 +312,12 @@ span {
 #profileModal .modal-footer .btn-out:hover{
     background: #745954;
     border: none;
+}
+
+#profileModal .modal-header .btn-close{
+    background-color: #EBD6CA;
+    border-radius: 50px;
+    margin-right: 10px;
 }
 
 #editModal .modal-content{
@@ -851,7 +679,115 @@ span {
 }
 
 
+input:focus,
+button:focus,
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
 
+.form-control:disabled, .form-control[readonly]{
+    background-color: #fff;
+}
+
+.table{
+    background:#EBD6CA;
+    transition: all .6s ease;
+    box-shadow: rgba(100, 100,111,0.2) 0 7px 29px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+.table tr,
+.table tr td{
+    vertical-align: middle;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+}
+
+.button-container .form-control{
+    max-width: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+#myTable .form-control{
+    width: auto;
+    display: inline-block;
+}
+
+.cart-qty-plus,
+.cart-qty-minus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color:  #745954;
+    border: none;
+    color: #EBD6CA;
+    font-size: 20px;
+}
+
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+    background-color: #7D3A2A;
+    color: #EBD6CA;
+}
+
+.table td input{
+    text-align: center;
+    width: 35px;
+    border: none;
+    background: transparent;
+    color: #41322a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.table td input:focus{
+    background: transparent;
+}
+
+
+.table td p{
+    margin-left: 15px;
+    text-align: left;
+    margin-top: 12px;
+    width: 195px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    color: #41322a;
+}
+
+.table td .price{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 33px;
+    color: #41322a;
+    width: 80px;
+}
+
+.table .btn-cart,
+.btn-edit{
+    color:#41322A;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.table .btn-cart:hover,
+.btn-edit:hover{
+    color: #7D3A2A;
+}
 
 
 
