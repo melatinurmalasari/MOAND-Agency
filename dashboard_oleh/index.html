@@ -67,792 +67,960 @@
   </button>
   </div>
 
-  <div class="project">
-    <div class="shop">
-      <div class="box">
-        <div class="content">
-          <h3>Rengginang Udang Pack</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp110.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="table">
+          <table id="myTable" class="table">
+            <thead align="center">
+              <tr>
+                <th>Nama</th>
+                <th>Terjual</th>
+                <th>Tersedia</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+              </tr>
+            </thead>
+            <tbody align="center">
+              <tr>
+                <td>
+                  <p>Rengginang Udang Pack</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp110.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kembang Jambu</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp100.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Sus Gosyen</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp115.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Sus TBH</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp130.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Sus TBH Bangkong</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp90.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hello Sus</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp130.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kulit Ikan Kakap</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp140.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Bolu Donat</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp55.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kembang Goyang</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp55.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Pisang Dollar MT</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp135.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Dollar</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp75.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Stik Sukun Azam</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp155.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Singkong Bakar Tes</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp115.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Singkong Bakar Mitratop</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp75.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Stik Tes Balado</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp75.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Stik Nana</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp55.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Stik Keju</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp100.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kacang Oven Kulit Onta</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp195.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kacang AS 2.5 Kg</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp90.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kacang AS 5 Kg</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp180.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kacang Utama</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp120.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kacang Bima</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp110.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Green Stik</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp45.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Yolla Yolla Stik</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp70.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Pisang Eco Rajanangka</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp95.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Pisang Eco Kepok</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp115.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Jelly Inaco</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp255.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kapri tepung KMU</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp100.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kapri Ijo Jaipong</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp115.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Pang-pang KMU</p>
+                </td>
+                <td>
+                  <input type="text" value="65">
+                </td>
+                <td>
+                  <input type="text" value="100">
+                </td>
+                 <td>
+                  <input type="text" value="Rp95.000" class="price" disabled>
+                </td>
+                <td>
+                  <div class="button-container">
+                    <button class="cart-qty-minus" type="button" value="-">-</button>
+                    <input type="text" name="qty" min="0" class="qty form-control " value="0">
+                     <button class="cart-qty-plus" type="button" value="+">+</button>
+                  </div>
+                </td>
+                 <td>
+                   <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
+                      <i class="fa-solid fa-pen-to-square"></i> 
+                    </button>
+                </td>
+                <td>
+                   <button type="button" class="btn-cart"> 
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </td>
+              </tr>
 
-      <div class="box">
-        <div class="content">
-          <h3>Kembang Jambu</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp100.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
 
-      <div class="box">
-        <div class="content">
-          <h3>Sus Gosyen</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp115.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
+            </tbody>
+          </table>
         </div>
       </div>
-   
-      <div class="box">
-        <div class="content">
-          <h3>Sus TBH</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp130.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Sus TBH Bangkong</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp90.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-    
-      <div class="box">
-        <div class="content">
-          <h3>Hello Sus</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp130.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Kulit Ikan Kakap</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp140.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Bolu Donat</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp55.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Kembang Goyang</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp55.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Pisang Dollar MT</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp135.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-    
-      <div class="box">
-        <div class="content">
-          <h3>Dollar</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp75.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Stik Sukun Azam</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp155.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Singkong Bakar Tes</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp115.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-    
-      <div class="box">
-        <div class="content">
-          <h3>Singkong Bakar Mitratop</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp75.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Stik Tes Balado</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp75.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Stik Nana</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp55.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Stik Keju</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp100.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-    
-      <div class="box">
-        <div class="content">
-          <h3>Kacang Oven Kulit Onta</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp195.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Kacang AS 2.5 Kg</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp90.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Kacang AS 5 Kg</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp180.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Kacang Utama</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp120.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Kacang Bima</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp110.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Green Stik</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp45.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Yolla-Yolla Stik</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp70.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Pisang Eco Rajanangka</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp95.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Jelly Inaco</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp255.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <h3>Kapri Tepung KMU</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp100.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Kapri Ijo Jaipong</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp115.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
- 
-      <div class="box">
-        <div class="content">
-          <h3>Pang-pang KMU</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp95.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-  
-      <div class="box">
-        <div class="content">
-          <h3>Rengginang Udang Pack</h3>
-          <p class="unit"> 
-            Tersedia <input value="100">
-            <i class="fa-solid fa-circle"></i>
-            Terjual <input value="65"></p>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn-edit"> 
-            <i class="fa-solid fa-pen-to-square"></i> 
-          </button>
-          <span class="text">Rp102.000</span>
-          <button type="button" class="btn-min"> 
-             <i class="fa-solid fa-circle-minus"></i>
-          </button>
-          <button type="button" class="btn-plus"> 
-             <i class="fa-solid fa-circle-plus"></i>
-          </button>
-          <p class="add">
-            <input value="2">
-          </p>
-          <button type="button" class="btn-cart"> 
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
-      </div>
-
-   
-
     </div>
   </div>
+
 </div>
 
 <!-- Modal Edit-->
