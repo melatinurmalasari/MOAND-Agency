@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2023 at 06:26 AM
+-- Generation Time: Jun 18, 2023 at 04:19 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.28
 
@@ -36,6 +36,17 @@ CREATE TABLE `barang` (
   `jual_laku` int(100) NOT NULL,
   `stok` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `barang`
+--
+
+INSERT INTO `barang` (`id_barang`, `id_kategori`, `id_kasir`, `nama_barang`, `harga_barang`, `jual_laku`, `stok`) VALUES
+(1, 3, 1, 'bastik gurih 250gr', 15000, 66, 120),
+(2, 3, 1, 'cendol keju 250gr', 10000, 70, 120),
+(3, 1, 1, 'kembang jambu', 100000, 33, 20),
+(4, 1, 1, 'sus gosyen', 115000, 23, 15),
+(5, 2, 1, 'kembang jambu', 93000, 12, 20);
 
 -- --------------------------------------------------------
 
@@ -150,7 +161,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(12) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_barang` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `kasir`
