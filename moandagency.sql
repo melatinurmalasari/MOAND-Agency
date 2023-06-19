@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2023 at 04:19 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.4.28
+-- Waktu pembuatan: 18 Jun 2023 pada 16.43
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,192 +24,109 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang`
+-- Struktur dari tabel `barang`
 --
 
 CREATE TABLE `barang` (
-  `id_barang` int(12) NOT NULL,
-  `id_kategori` int(12) NOT NULL,
-  `id_kasir` int(12) NOT NULL,
-  `nama_barang` varchar(256) NOT NULL,
-  `harga_barang` int(100) NOT NULL,
-  `jual_laku` int(100) NOT NULL,
-  `stok` int(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `barang`
---
-
-INSERT INTO `barang` (`id_barang`, `id_kategori`, `id_kasir`, `nama_barang`, `harga_barang`, `jual_laku`, `stok`) VALUES
-(1, 3, 1, 'bastik gurih 250gr', 15000, 66, 120),
-(2, 3, 1, 'cendol keju 250gr', 10000, 70, 120),
-(3, 1, 1, 'kembang jambu', 100000, 33, 20),
-(4, 1, 1, 'sus gosyen', 115000, 23, 15),
-(5, 2, 1, 'kembang jambu', 93000, 12, 20);
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `harga` int(11) NOT NULL,
+  `stok` int(11) NOT NULL,
+  `terjual` int(11) NOT NULL DEFAULT 0,
+  `kategori` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kasir`
+-- Struktur dari tabel `migrations`
 --
 
-CREATE TABLE `kasir` (
-  `id_kasir` int(12) NOT NULL,
-  `username_kasir` varchar(256) NOT NULL,
-  `Password_kasir` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `migrations` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `migration` varchar(255) NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `kasir`
+-- Dumping data untuk tabel `migrations`
 --
 
-INSERT INTO `kasir` (`id_kasir`, `username_kasir`, `Password_kasir`) VALUES
-(1, 'mela', '123');
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_reset_tokens_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
+(5, '2023_06_18_101012_create_barangs_table', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kategori`
+-- Struktur dari tabel `users`
 --
 
-CREATE TABLE `kategori` (
-  `id_kategori` int(12) NOT NULL,
-  `nama_kategori` varchar(256) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `users` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `kategori`
+-- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
-(1, 'oleh-oleh'),
-(2, 'reseller'),
-(3, 'eceran');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `listpesanan`
---
-
-CREATE TABLE `listpesanan` (
-  `id_pesanan` int(255) NOT NULL,
-  `id_barang` int(12) NOT NULL,
-  `no_transaksi` int(12) NOT NULL,
-  `kuantitas` int(255) NOT NULL,
-  `total` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `transaksi`
---
-
-CREATE TABLE `transaksi` (
-  `no_transaksi` int(12) NOT NULL,
-  `id_kasir` int(12) NOT NULL,
-  `total` int(255) NOT NULL,
-  `tgl_transaksi` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO `users` (`id`, `nama`, `email`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'Admin', 'admin@admin.com', '$2y$10$TNzYz.8eYzZ3irEGkoFukOMVnWGvTw1d6uxuxkVQVasiqD7CbcALe', '2023-06-18 07:42:44', '2023-06-18 07:42:44');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `barang`
+-- Indeks untuk tabel `barang`
 --
 ALTER TABLE `barang`
-  ADD PRIMARY KEY (`id_barang`),
-  ADD KEY `barang_ibfk_1` (`id_kategori`),
-  ADD KEY `id_kasir` (`id_kasir`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kasir`
+-- Indeks untuk tabel `migrations`
 --
-ALTER TABLE `kasir`
-  ADD PRIMARY KEY (`id_kasir`);
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kategori`
+-- Indeks untuk tabel `users`
 --
-ALTER TABLE `kategori`
-  ADD PRIMARY KEY (`id_kategori`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- Indexes for table `listpesanan`
---
-ALTER TABLE `listpesanan`
-  ADD PRIMARY KEY (`id_pesanan`),
-  ADD KEY `id_barang` (`id_barang`),
-  ADD KEY `no_transaksi` (`no_transaksi`);
-
---
--- Indexes for table `transaksi`
---
-ALTER TABLE `transaksi`
-  ADD PRIMARY KEY (`no_transaksi`),
-  ADD KEY `id_kasir` (`id_kasir`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `barang`
+-- AUTO_INCREMENT untuk tabel `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `kasir`
+-- AUTO_INCREMENT untuk tabel `migrations`
 --
-ALTER TABLE `kasir`
-  MODIFY `id_kasir` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `kategori`
+-- AUTO_INCREMENT untuk tabel `users`
 --
-ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `listpesanan`
---
-ALTER TABLE `listpesanan`
-  MODIFY `id_pesanan` int(255) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `transaksi`
---
-ALTER TABLE `transaksi`
-  MODIFY `no_transaksi` int(12) NOT NULL AUTO_INCREMENT;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `barang`
---
-ALTER TABLE `barang`
-  ADD CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`),
-  ADD CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`id_kasir`) REFERENCES `kasir` (`id_kasir`);
-
---
--- Constraints for table `listpesanan`
---
-ALTER TABLE `listpesanan`
-  ADD CONSTRAINT `listpesanan_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`),
-  ADD CONSTRAINT `listpesanan_ibfk_2` FOREIGN KEY (`no_transaksi`) REFERENCES `transaksi` (`no_transaksi`);
-
---
--- Constraints for table `transaksi`
---
-ALTER TABLE `transaksi`
-  ADD CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kasir`) REFERENCES `kasir` (`id_kasir`);
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
