@@ -1,0 +1,179 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.login{
+    height: 100vh;
+    background: #EBD6CA;
+}
+
+.login .login-left{
+    background: linear-gradient(270deg, #745954 0%, #41322A 78.53%);
+    border-radius: 0px 38px 38px 0px;
+    margin-right: 1rem;
+}
+
+.header h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 34px;
+    color: #EBD6CA;
+    margin-bottom: 9px;
+    width: 525px;
+}
+
+.login-form label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #EBD6CA;
+    margin-top: 40px;
+}
+
+.login-form input{
+    background: #745954;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    width: 450px;
+}
+
+.login-form label a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #CABEC1;
+    margin-left: 200px;
+}
+
+.login-form label a:hover{
+    color: #EBD6CA;
+}
+
+.login-form .signin{
+    background: #7D3A2A;
+    width: 100%;
+    height: 59px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #CABEC1;;
+    font-style: normal;
+    margin-top: 44px;
+    border: none;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-form .signin:hover{
+    background:  #745954;
+   
+}
+
+.box{
+    width: 942px;
+    background: linear-gradient(270deg, #745954 0%, #41322A 78.53%);
+    border-radius: 0px 38px 38px 0px;
+}
+
+.login img{
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    filter: drop-shadow(0px 100px 109px rgba(65, 50, 42, 0.47)) drop-shadow(0px 50.0488px 54.5532px rgba(65, 50, 42, 0.357356)) drop-shadow(0px 30.1471px 32.8603px rgba(65, 50, 42, 0.306247)) drop-shadow(0px 19.3198px 21.0586px rgba(65, 50, 42, 0.268321)) drop-shadow(0px 12.5216px 13.6485px rgba(65, 50, 42, 0.235)) drop-shadow(0px 7.88218px 8.59157px rgba(65, 50, 42, 0.201679)) drop-shadow(0px 4.5288px 4.93639px rgba(65, 50, 42, 0.163753)) drop-shadow(0px 1.99324px 2.17263px rgba(65, 50, 42, 0.112644));
+
+
+}
+
+.password{
+    height: 100vh;
+    background: #EBD6CA;
+}
+
+.password .password-left{
+    background: linear-gradient(270deg, #745954 0%, #41322A 78.53%);
+    border-radius: 0px 38px 38px 0px;
+    margin-right: 1rem;
+}
+
+.header h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 34px;
+    color: #EBD6CA;
+    margin-bottom: 9px;
+    width: 525px;
+}
+
+.header p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+    color: #EBD6CA;
+    margin-top: 32px;
+    margin-right: 150px;
+}
+
+.password-form label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #EBD6CA;
+    margin-top: 40px;
+}
+
+.password-form input{
+    background: #745954;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    width: 450px;
+}
+
+.password-form .submit{
+    background: #7D3A2A;
+    width: 100%;
+    height: 59px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #CABEC1;;
+    font-style: normal;
+    margin-top: 44px;
+    border: none;
+    width: 450px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.password-form .submit:hover{
+   background: #745954;
+}
+
+.box{
+    width: 942px;
+    background: linear-gradient(270deg, #745954 0%, #41322A 78.53%);
+    border-radius: 0px 38px 38px 0px;
+}
+
+.password img{
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    filter: drop-shadow(0px 100px 109px rgba(65, 50, 42, 0.47)) drop-shadow(0px 50.0488px 54.5532px rgba(65, 50, 42, 0.357356)) drop-shadow(0px 30.1471px 32.8603px rgba(65, 50, 42, 0.306247)) drop-shadow(0px 19.3198px 21.0586px rgba(65, 50, 42, 0.268321)) drop-shadow(0px 12.5216px 13.6485px rgba(65, 50, 42, 0.235)) drop-shadow(0px 7.88218px 8.59157px rgba(65, 50, 42, 0.201679)) drop-shadow(0px 4.5288px 4.93639px rgba(65, 50, 42, 0.163753)) drop-shadow(0px 1.99324px 2.17263px rgba(65, 50, 42, 0.112644));
+
+
+}
+
+.alert{
+    width: 450px;
+}
